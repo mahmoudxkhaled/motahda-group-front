@@ -1,0 +1,16 @@
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './layout/header/header.component';
+import { TopInfoComponent } from './common/top-info/top-info.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { ToastModule } from 'primeng/toast';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, HeaderComponent, TopInfoComponent, FooterComponent, ToastModule],
+  templateUrl: './app.html',
+  styleUrl: './app.scss'
+})
+export class App {
+  protected readonly title = signal('motahda-group');
+}

@@ -1,0 +1,196 @@
+<div class="home-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- <h1 class="company-title">Quantum Project Management & Claims Services (QPMC)</h1> -->
+            <div class="hero-slider">
+                <button class="slider-arrow slider-arrow-left" (click)="previousSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slider-arrow slider-arrow-right" (click)="nextSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="slide slide-1 active"
+                    style="background-image: url('assets/Images/hamad-port/hamad-port-construction.jpg');">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Project Controls Services</h2>
+                    <p>Comprehensive project planning, execution, and delivery solutions</p>
+                    <a routerLink="/services/project-management" class="cta-button">Explore more</a>
+                </div>
+                <div class="slide slide-2" style="background-image: url('assets/Images/qatalum/qatalum-factory.jpg');">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Claims & Disputes Resolution Services</h2>
+                    <p>Expert claims handling, resolution, and dispute management</p>
+                    <a routerLink="/services/claims-management" class="cta-button">Explore more</a>
+                </div>
+                <div class="slide slide-3" style="background-image: url('assets/Images/qatalum/qatalum-external.jpg');">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Contracts & Project Management Services</h2>
+                    <p>Strategic project management and contract administration</p>
+                    <a routerLink="/services/project-management" class="cta-button">Explore more</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-dot active" (click)="showSlide(0)"></button>
+                <button class="slider-dot" (click)="showSlide(1)"></button>
+                <button class="slider-dot" (click)="showSlide(2)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview Section -->
+    <section class="company-overview">
+        <div class="container">
+            <h2 class="section-title">Quantum Project Management & Claims Services (QPMC)</h2>
+
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Why QPMC</h3>
+                    <ul>
+                        <li>All our services can vary from providing day-to-day support and/or professional advice, up
+                            to full responsibility from the first brick of the function to its full operation/interface
+                        </li>
+                        <li>The flexibility of the services we can offer will ensure cost-effective solutions to our
+                            clients</li>
+                    </ul>
+                    <p>With more than 20 years of experience in the construction industry within the Middle East, our
+                        team has developed diverse experience and knowledge of the region's needs and challenges with
+                        respect to complex construction project management and dispute handling up to resolution</p>
+                </div>
+
+                <div class="overview-card">
+                    <h3>Who can be our Client</h3>
+                    <ul>
+                        <li>Governmental entities, developers, or any construction project owner seeking to utilize our
+                            services in general claims management and/or expert reports</li>
+                        <li>Project owners, Consultants, or Contractors seeking to develop and implement a robust change
+                            management strategy</li>
+                        <li>Contractors aiming to organize their project disputes and develop their entitlements claims
+                        </li>
+                        <li>Contractors seeking advice on contract risk distribution and containment during tendering
+                        </li>
+                        <li>Project owners, Consultants, and/or Contractors requiring services for mediation or
+                            adjudication for their disputes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Logo Marquee Section -->
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="section-title">Our Clients</h2>
+            <div class="marquee-container">
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <div class="client-logo">
+
+                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Slider Section -->
+    <section class="projects-slider-section">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div class="projects-slider-container">
+                <button class="project-slider-arrow project-slider-left" (click)="previousProject()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="project-slider-arrow project-slider-right" (click)="nextProject()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="projects-slider">
+                    <div class="project-slide" *ngFor="let project of projects; let i = index"
+                        [class.active]="i === currentProject">
+                        <div class="project-image" [style.background-image]="'url(' + project.image + ')'"
+                            [routerLink]="['/projects', project.id]" style="cursor: pointer;">
+                            <div class="project-overlay">
+                                <h3 class="project-title">{{ project.title }}</h3>
+                                <p class="project-location">{{ project.location }}</p>
+                                <a [routerLink]="['/projects', project.id]" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slider-controls">
+                    <button *ngFor="let project of projects; let i = index" class="project-slider-dot"
+                        [class.active]="i === currentProject" (click)="goToProject(i)">
+                    </button>
+                </div>
+            </div>
+            <div class="explore-projects-btn-container">
+                <a routerLink="/projects" class="explore-projects-btn">Explore all projects</a>
+            </div>
+        </div>
+    </section>
+</div>
