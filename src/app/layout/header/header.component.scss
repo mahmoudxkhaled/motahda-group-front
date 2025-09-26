@@ -46,8 +46,8 @@
 }
 
 .logo-image {
-  width: 90px;
-  height: 90px;
+  width: auto;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -113,6 +113,8 @@
 .navigation {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: center; // center nav like design
 }
 
 .nav-list {
@@ -131,19 +133,20 @@
 .nav-link {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
   // padding: 0.5rem 0;
   transition: color 0.3s ease;
   position: relative;
   cursor: pointer;
   
   &:hover {
-    color: #4da6ff;
+    color: #c62828; // dark red hover
   }
   
   &.active {
-    color: #4da6ff;
+    color: #c62828;
     
     &::after {
       content: '';
@@ -152,8 +155,8 @@
       left: 0;
       right: 0;
       height: 2px;
-      background-color: #4da6ff;
-      color: #4da6ff;
+      background-color: #c62828; // red underline
+      color: #c62828;
       border-radius: 1px;
     }
   }
@@ -176,7 +179,7 @@
   }
   
   &.active {
-    color: #4da6ff;
+    color: #c62828;
     
     &::after {
       content: '';
@@ -185,8 +188,8 @@
       left: 0;
       right: 0;
       height: 2px;
-      background-color: #4da6ff;
-      color: #4da6ff;
+      background-color: #c62828;
+      color: #c62828;
       border-radius: 1px;
     }
   }
@@ -303,11 +306,11 @@
     width: 100%;
     
     &:hover {
-      color: #4da6ff !important;
+      color: #ff6b6b !important;
     }
     
     &.active {
-      color: #4da6ff !important;
+      color: #ff6b6b !important;
       
       &::after {
         display: none;
@@ -327,7 +330,7 @@
     }
     
     &.active {
-      color: #4da6ff !important;
+      color: #ff6b6b !important;
       
       &::after {
         display: none;
@@ -367,12 +370,12 @@
     
     &:hover {
       background-color: transparent;
-      color: #4da6ff !important;
+      color: #ff6b6b !important;
       padding-left: 0;
     }
     
     &.active {
-      color: #4da6ff !important;
+      color: #ff6b6b !important;
     }
   }
   
@@ -385,12 +388,38 @@
     margin-bottom: 0;
   }
   
-  .company-name {
-    font-size: 1.2rem;
-  }
+  .logo-image { height: 80px; }
+  .company-name { font-size: 1.2rem; }
   
   .company-tagline {
     font-size: 0.7rem;
+  }
+}
+
+// CTA button styles
+.cta-wrapper {
+  margin-left: 1.5rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #c62828; // red
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 16px;
+  font-weight: 600;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08) inset;
+  transition: background-color 0.2s ease, transform 0.05s ease;
+
+  &:hover {
+    background-color: #b71c1c;
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 }
 
@@ -404,8 +433,8 @@
   }
   
   .logo-image {
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: 56px;
   }
   
   .company-name {

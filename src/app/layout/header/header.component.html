@@ -4,12 +4,9 @@
         <div class="logo-section">
             <div class="logo">
                 <div class="logo-symbol" [routerLink]="['/']" style="cursor: pointer;">
-                    <img src="assets/Images/cropped-logo-180x180.png" alt="Quantum PMC Logo" class="logo-image">
+                    <img src="assets/Images/home/logo-motahda-source-01.svg" alt="Quantum PMC Logo" class="logo-image">
                 </div>
-                <div class="logo-text" [routerLink]="['/']" style="cursor: pointer;">
-                    <h1 class="company-name">{{ companyName() }}</h1>
-                    <p class="company-tagline">{{ companyTagline() }}</p>
-                </div>
+
             </div>
         </div>
 
@@ -52,5 +49,10 @@
                 }
             </ul>
         </nav>
+        <div class="cta-wrapper">
+            <a class="cta-button" [routerLink]="['/contact']" (click)="closeMobileMenu()">
+                Contact Us <span class="cta-arrow">→</span>
+            </a>
+        </div>
     </div>
 </header>

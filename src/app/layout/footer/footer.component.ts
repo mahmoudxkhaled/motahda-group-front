@@ -11,13 +11,13 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
     // Company information
-    companyName: string = 'Quantum PMC LLC';
-    companyTagline: string = 'PROJECT MANAGEMENT & CLAIMS SERVICES';
-    companyAddress: string = 'Al-Ansab, PO Box: B3897-900 - Muscat, Sultanate of Oman';
-    companyDescription: string = 'With more than 20 years of experience in the construction industry within the middle east, our team have developed a diverse experience and knowledge of the region\'s needs and challenges with respect to complex construction projects management and disputes handling up to resolution.';
+    companyName: string = 'Motahda';
+    companyTagline: string = 'GROUP';
+    companyAddress: string = 'Mokattam, New Cairo, Egypt';
+    companyDescription: string = '';
 
     // Company contact information
-    companyEmail: string = 'info@motahda-group.com';
+    companyEmail: string = 'info@motahda.com';
     companyWhatsapp: string = '96891428180'; // Oman WhatsApp number without + sign
     companyWhatsappString: string = '+968 9142 8180'; // Display format
 

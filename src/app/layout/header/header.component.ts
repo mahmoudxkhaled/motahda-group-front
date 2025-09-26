@@ -20,17 +20,9 @@ export class HeaderComponent {
     protected readonly navigationItems = signal<NavigationItem[]>([
         { label: 'Home', route: '/' },
         { label: 'About Us', route: '/about' },
-        {
-            label: 'Services',
-            hasDropdown: true,
-            dropdownItems: [
-                { label: 'Project Management', route: '/services/project-management' },
-                { label: 'Claims Management', route: '/services/claims-management' }
-            ]
-        },
+        { label: 'Services', route: '/services' },
         { label: 'Projects', route: '/projects' },
-        { label: 'Careers', route: '/careers' },
-        { label: 'Contact Us', route: '/contact' }
+        { label: 'Careers', route: '/careers' }
     ]);
 
     // Mobile menu state
