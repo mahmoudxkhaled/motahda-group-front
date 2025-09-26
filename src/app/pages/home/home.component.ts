@@ -3,11 +3,12 @@ import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, CarouselModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
@@ -43,7 +44,7 @@ export class HomeComponent {
   ];
 
   projects = Array.from({ length: 8 }).map((_, i) => ({
-    image: `assets/Images/muscat-airport/muscat-airport-${(i % 10) + 1}.jpg`,
+    image: `assets/Images/home/AdobeStock_894712151-1-png.webp`,
     title: 'General authority for economic zones',
     text: 'Raising the efficiency of the fire network, changing the fire...',
   }));
@@ -60,4 +61,28 @@ export class HomeComponent {
     const amount = id === 'proj' ? 320 : 240;
     track.scrollBy({ left: amount * dir, behavior: 'smooth' });
   }
+
+  responsiveOptions = [
+
+    {
+      breakpoint: '1360px',
+      numVisible: 4,
+      numScroll: 1
+    },
+    {
+      breakpoint: '1200px',
+      numVisible: 3,
+      numScroll: 1
+    },
+    {
+      breakpoint: '992px',
+      numVisible: 2,
+      numScroll: 1
+    },
+    {
+      breakpoint: '576px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];
 }

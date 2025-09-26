@@ -210,31 +210,101 @@
         </div>
     </section>
 
+
+
+    <!-- Partners Section -->
+
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="section-title">Partners & Clients
+            </h2>
+            <div class="marquee-container">
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <div class="client-logo">
+
+                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <h3 class="section-title" [@fadeIn]>Our Projects</h3>
-            <div class="carousel" [@fadeInDelayed]>
-                <button class="carousel__nav carousel__nav--prev" (click)="scroll('proj', -1)"
-                    aria-label="Prev">‹</button>
-                <div class="carousel__track" id="projTrack">
-                    <article class="project-card" *ngFor="let p of projects">
+            <div class="projects__header" [@fadeIn]>
+                <div class="projects__eyebrow">Our Projects</div>
+                <h3 class="projects__headline">Motahda has successfully executed large-scale projects across Egypt and
+                    beyond</h3>
+            </div>
+            <p-carousel [value]="projects" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="0"
+                [responsiveOptions]="responsiveOptions" styleClass="projects-carousel" [@fadeInDelayed]>
+                <ng-template pTemplate="item" let-p>
+                    <article class="project-card">
                         <figure class="project-card__figure">
                             <img [src]="p.image" alt="Project" />
                         </figure>
                         <h4 class="project-card__title">{{ p.title }}</h4>
                         <p class="project-card__text">{{ p.text }}</p>
-                        <a class="btn btn--ghost btn--sm" routerLink="/projects">View more</a>
+                        <a class="btn btn--ghost btn--sm" routerLink="/projects">View more <span
+                                class="btn__icon">→</span></a>
                     </article>
-                </div>
-                <button class="carousel__nav carousel__nav--next" (click)="scroll('proj', 1)"
-                    aria-label="Next">›</button>
-            </div>
+                </ng-template>
+            </p-carousel>
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="partners" id="partners">
+    <!-- <section class="partners" id="partners">
         <div class="container">
             <h3 class="section-title" [@fadeIn]>Partners & Clients</h3>
             <div class="logo-carousel" id="logoTrack" [@fadeInDelayed]>
@@ -243,5 +313,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
 </main>

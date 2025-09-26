@@ -95,3 +95,10 @@ a {
 ul, ol {
   list-style: none;
 }
+
+/* Global container utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
