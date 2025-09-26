@@ -13,6 +13,6 @@ import { BannerComponent } from '../../common/banner/banner.component';
 })
 export class ServicesComponent {
   constructor(private title: Title) {
-    this.title.setTitle('Services | Motahda Group');
+    this.title.setTitle('Services | Motahida Group');
   }
 }

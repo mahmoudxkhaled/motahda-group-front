@@ -1,6 +1,6 @@
-# Motahda Group - Project Management & Claims Services
+# Motahida Group - Project Management & Claims Services
 
-A modern Angular application for Motahda Group, a project management and claims services company.
+A modern Angular application for Motahida Group, a project management and claims services company.
 
 ## Features
 

@@ -20,7 +20,7 @@ interface ProjectListItem {
 })
 export class ProjectsComponent {
   constructor(private title: Title) {
-    this.title.setTitle('Projects | Motahda Group');
+    this.title.setTitle('Projects | Motahida Group');
   }
 
   projects: ProjectListItem[] = [

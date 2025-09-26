@@ -1971,7 +1971,7 @@ var _n = (() => {
 var Ye = {
   production: !0,
   apiUrl: "https://api.motahda-group.com/api",
-  appName: "Motahda Group",
+  appName: "Motahida Group",
   version: "1.0.0",
   debug: !1,
   logLevel: "error",

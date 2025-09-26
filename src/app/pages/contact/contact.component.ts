@@ -16,7 +16,7 @@ import { MessageService } from 'primeng/api';
 })
 export class ContactComponent {
   constructor(private title: Title, private apiService: ApiService, private messageService: MessageService) {
-    this.title.setTitle('Contact | Motahda Group');
+    this.title.setTitle('Contact | Motahida Group');
   }
   isSubmitting = false;
   errorMessage = '';

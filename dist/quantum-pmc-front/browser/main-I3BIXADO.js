@@ -6657,7 +6657,7 @@ var Co = class e {
         "src",
         "assets/Images/cropped-logo-180x180.png",
         "alt",
-        "Motahda Group Logo",
+        "Motahida Group Logo",
         1,
         "logo-image",
       ],
@@ -6751,7 +6751,7 @@ var Co = class e {
   });
 };
 var yo = class e {
-  companyName = "Motahda Group LLC";
+  companyName = "Motahida Group LLC";
   companyAddress = "Al-Ansab, PO Box: B3897-900 - Muscat, Sultanate of Oman";
   companyEmail = "info@motahda-group.com";
   companyWhatsapp = "96891428180";
@@ -6767,7 +6767,7 @@ var yo = class e {
     whatsapp: "WhatsApp",
     contact_us: "Contact Us",
     follow_us: "Follow Us",
-    company_name: "Motahda Group LLC",
+    company_name: "Motahida Group LLC",
   };
   static ɵfac = function (o) {
     return new (o || e)();
@@ -6851,7 +6851,7 @@ var yo = class e {
 var wf = () => ["/"],
   _f = () => ({ exact: !0 }),
   ko = class e {
-    companyName = "Motahda Group LLC";
+    companyName = "Motahida Group LLC";
     companyTagline = "PROJECT MANAGEMENT & CLAIMS SERVICES";
     companyAddress = "Al-Ansab, PO Box: B3897-900 - Muscat, Sultanate of Oman";
     companyDescription =
@@ -6885,7 +6885,7 @@ var wf = () => ["/"],
           "src",
           "assets/Images/cropped-logo-180x180.png",
           "alt",
-          "Motahda Group Logo",
+          "Motahida Group Logo",
           1,
           "logo-image",
         ],

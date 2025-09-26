@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
     // Company information
-    companyName: string = 'Motahda';
+    companyName: string = 'Motahida';
     companyTagline: string = 'GROUP';
     companyAddress: string = 'Mokattam, New Cairo, Egypt';
     companyDescription: string = '';

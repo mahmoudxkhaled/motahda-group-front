@@ -96,7 +96,7 @@ export class ProjectDetailComponent implements OnInit {
         this.loadProject(projectId);
         const project = this.projectsData[projectId as keyof typeof this.projectsData];
         if (project) {
-          this.title.setTitle(`${project.title} | Motahda Group`);
+          this.title.setTitle(`${project.title} | Motahida Group`);
         }
       }
     });

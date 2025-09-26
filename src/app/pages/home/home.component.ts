@@ -79,7 +79,7 @@ export class HomeComponent {
   partners = Array.from({ length: 10 }).map((_, i) => `assets/Images/cropped-logo-180x180.png`);
 
   constructor(private title: Title) {
-    this.title.setTitle('Motahda Group - Home');
+    this.title.setTitle('Motahida Group - Home');
   }
 
   scroll(id: 'proj' | 'logo', dir: 1 | -1) {
