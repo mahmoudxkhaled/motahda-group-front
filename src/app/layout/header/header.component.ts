@@ -22,7 +22,6 @@ export class HeaderComponent {
         { label: 'About Us', route: '/about' },
         { label: 'Services', route: '/services' },
         { label: 'Projects', route: '/projects' },
-        { label: 'Careers', route: '/careers' }
     ]);
 
     // Mobile menu state

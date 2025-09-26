@@ -1,106 +1,27 @@
-<div class="projects-content">
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="page-title">Projects</h1>
-            <!-- <p class="hero-subtitle">Successfully delivered projects across various sectors and scales</p> -->
-        </div>
-    </section>
-    <p class="container text-center" style="font-size: 1.2rem; text-align: center; margin-top: 15px;">Our team has
-        supported or provided
-        project management
-        and claims services for
-        various
-        construction projects within the Middle East with diverse sizes and natures, from small infrastructure projects,
-        residential buildings, utility lines, power stations, and up to mega airport and seaport projects. The following
-        points list some of those projects with highlights on the project functions supported or fully managed by our
-        team.</p>
+<app-banner title="Projects"></app-banner>
 
-    <!-- Projects Grid -->
-    <section class="projects-showcase">
-        <div class="container">
-            <div class="projects-grid">
-                <div class="project-card" *ngFor="let p of projects">
-                    <div class="project-image-container" [routerLink]="['/projects', p.id]" style="cursor: pointer;">
-                        <div class="project-image" [ngStyle]=" { 'background-image' : 'url(' + p.image + ')' }">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', p.id]" class="project-link">Read more</a>
-                        </div>
+<!-- Projects Listing Section -->
+<section class="projects-listing">
+    <div class="container">
+        <div class="projects-grid">
+            <div class="project-card" *ngFor="let project of projects">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h2 class="project-title">
+                            <a [routerLink]="['/projects', project.id]">{{ project.title }}</a>
+                        </h2>
+                        <p class="project-description">{{ project.description }}</p>
                     </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', p.id]" style="cursor: pointer;">{{ p.title }}</h3>
-                        <p class="project-client">Client - {{ p.client }}</p>
-                        <p class="project-company">Company - {{ p.company }}</p>
-                        <p class="project-scope">Scope - {{ p.scope }}</p>
-                        <p class="project-location">{{ p.location }}</p>
-                        <p class="project-description">{{ p.description }}</p>
-                        <div class="project-tags">
-                            <span class="tag" *ngFor="let tag of p.tags">{{ tag }}</span>
-                        </div>
+                    <div class="project-image">
+                        <img [src]="project.heroImage" [alt]="project.title">
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" *ngFor="let i of [1,2,3,4]">
+                        <img src="assets/Images/projects/2.webp" [alt]="project.title + ' - Gallery Image ' + i">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Project Categories -->
-    <!-- <section class="project-categories">
-        <div class="container">
-            <h2 class="section-title">Project Categories</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">🏗️</div>
-                    <h3>Infrastructure</h3>
-                    <p>Roads, bridges, utilities, and public works projects</p>
-                    <span class="project-count">4 Projects</span>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">🏥</div>
-                    <h3>Healthcare</h3>
-                    <p>Hospitals, clinics, and medical facilities</p>
-                    <span class="project-count">1 Project</span>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">✈️</div>
-                    <h3>Aviation</h3>
-                    <p>Airports, terminals, and aviation infrastructure</p>
-                    <span class="project-count">1 Project</span>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">🏭</div>
-                    <h3>Industrial</h3>
-                    <p>Manufacturing plants and industrial facilities</p>
-                    <span class="project-count">1 Project</span>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">🕌</div>
-                    <h3>Religious</h3>
-                    <p>Places of worship and religious infrastructure</p>
-                    <span class="project-count">1 Project</span>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">⚡</div>
-                    <h3>Power & Energy</h3>
-                    <p>Electrical grids, power plants, and energy infrastructure</p>
-                    <span class="project-count">2 Projects</span>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact CTA -->
-    <!-- <section class="contact-cta">
-        <div class="container">
-            <h2>Interested in Our Project Management Services?</h2>
-            <p>Let us help you deliver your next project successfully with our proven expertise and comprehensive
-                services.</p>
-            <a routerLink="/contact" class="cta-button">Get in Touch</a>
-        </div>
-    </section> -->
-</div>
+    </div>
+</section>

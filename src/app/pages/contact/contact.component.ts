@@ -25,8 +25,6 @@ export class ContactComponent {
   formData = {
     name: '',
     email: '',
-    phone: '',
-    subject: '',
     message: ''
   };
 
@@ -41,8 +39,6 @@ export class ContactComponent {
     const formData: ContactFormData = {
       name: this.formData.name,
       email: this.formData.email,
-      phone: this.formData.phone || undefined,
-      subject: this.formData.subject || undefined,
       message: this.formData.message
     };
 
@@ -55,8 +51,6 @@ export class ContactComponent {
         this.formData = {
           name: '',
           email: '',
-          phone: '',
-          subject: '',
           message: ''
         };
 

@@ -1,90 +1,26 @@
 <div class="project-detail-content" *ngIf="project">
-    <!-- Project Header -->
-    <section class="project-header">
+    <!-- Hero: Title, Description, Hero Image -->
+    <section class="project-hero">
         <div class="container">
-            <h1 class="project-title">{{ project.title }}</h1>
-        </div>
-    </section>
-
-    <!-- Project Details Section -->
-    <section class="project-details">
-        <div class="container">
-            <div class="details-layout">
-                <div class="project-info">
-                    <div class="info-item">
-                        <span class="info-label">Client:</span>
-                        <span class="info-value">{{ project.client }}</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Company:</span>
-                        <span class="info-value">{{ project.company }}</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Scope:</span>
-                        <span class="info-value">{{ project.scope }}</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Location:</span>
-                        <span class="info-value">{{ project.location }}</span>
-                    </div>
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <h1 class="project-title">{{ project.title }}</h1>
+                    <p class="project-intro" [innerHTML]="project.description"></p>
                 </div>
-                <div class="project-image">
+                <div class="hero-image">
                     <img class="image-container" [src]="project.heroImage" [alt]="project.title">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Description -->
-    <section class="project-description">
-        <div class="container">
-            <div class="description-content">
-                <h3>Description:</h3>
-
-                <div class="description-text">
-                    <p [innerHTML]="project.description"></p>
-                </div>
-                <div class="key-responsibilities">
-                    <h3>Key Responsibilities:</h3>
-                    <ul>
-                        <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Images Grid -->
+    <!-- Images Gallery -->
     <section class="project-images" *ngIf="project.images && project.images.length > 0">
         <div class="container">
             <div class="images-grid">
                 <div class="image-item" *ngFor="let image of project.images">
                     <img [src]="image" [alt]="project.title + ' - Project Image'" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- You May Also Like Section -->
-    <section class="related-projects">
-        <div class="container">
-            <div class="related-header">
-                <h2 class="related-title">You May Also Like</h2>
-                <!-- <div class="title-line"></div> -->
-            </div>
-            <div class="related-grid">
-                <a [routerLink]="['/projects', relatedProject.id]" class="related-card"
-                    *ngFor="let relatedProject of project.relatedProjects">
-                    <div class="related-image-wrapper">
-                        <img [src]="getProjectImage(relatedProject.id)" [alt]="relatedProject.title">
-                        <div class="related-overlay">
-                            <span class="overlay-text">Explore</span>
-                        </div>
-                    </div>
-                    <div class="related-info">
-                        <h4 class="related-name">{{ relatedProject.title }}</h4>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
