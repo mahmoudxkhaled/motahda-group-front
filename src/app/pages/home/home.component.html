@@ -1,14 +1,15 @@
 <main class="home">
     <!-- Hero Section -->
     <section class="hero" role="banner">
-        <figure class="hero__bg" aria-hidden="true"></figure>
+        <figure class="hero__bg" aria-hidden="true" style="background-image: url('assets/Images/home/home1.png')">
+        </figure>
         <div class="hero__content" [@fadeIn]>
             <h1 class="hero__title">{{ hero.title }}</h1>
             <h2 class="hero__subtitle">{{ hero.subtitle }}</h2>
             <p class="hero__desc">{{ hero.description }}</p>
             <div class="hero__actions">
                 <a routerLink="/contact" class="btn btn--primary">
-                    <span class="btn__icon">📞</span>
+                    <span class="btn__icon"><i class="fas fa-phone"></i></span>
                     Request a Quote
                 </a>
                 <a routerLink="/services" class="btn btn--ghost">Explore Our Services</a>
@@ -94,7 +95,8 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <div class="services__panel">
+            <div class="services__panel"
+                style="background-image: url('assets/Images/home/8505b1b2b2eac08b01f7ff6b2df31b949b518886-scaled.webp')">
                 <div class="services__header" [@fadeIn]>
                     <div class="services__eyebrow">Our Services</div>
                     <h3 class="services__headline">Motahda delivers turnkey MEP solutions across various sectors we
@@ -296,7 +298,7 @@
                         </figure>
                         <h4 class="project-card__title">{{ p.title }}</h4>
                         <p class="project-card__text">{{ p.text }}</p>
-                        <a class="btn btn--ghost btn--sm" routerLink="/projects">View more <span
+                        <a class="btn btn--ghost btn--sm" [routerLink]="['/projects', p.id]">View more <span
                                 class="btn__icon">→</span></a>
                     </article>
                 </ng-template>

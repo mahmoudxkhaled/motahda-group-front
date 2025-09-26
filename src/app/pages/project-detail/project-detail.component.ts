@@ -38,10 +38,11 @@ export class ProjectDetailComponent implements OnInit {
         "assets/Images/projects/2.webp",
         "assets/Images/projects/2.webp",
       ]
-    }, "p2": {
+    },
+    "p2": {
       "id": "p2",
-      "title": "King Faisal Specialist Hospital and Research Center",
-      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).",
+      "title": "General Authority for Economic Zones",
+      "description": "Raising the efficiency of the fire network, changing the fire pump group, and establishing an external network with a total of 13 million Egyptian pounds.",
       "heroImage": "assets/Images/projects/1.webp",
       "images": [
         "assets/Images/projects/2.webp",
@@ -49,10 +50,11 @@ export class ProjectDetailComponent implements OnInit {
         "assets/Images/projects/2.webp",
         "assets/Images/projects/2.webp",
       ]
-    }, "p3": {
+    },
+    "p3": {
       "id": "p3",
-      "title": "King Faisal Specialist Hospital and Research Center",
-      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).",
+      "title": "Industrial Infrastructure Development",
+      "description": "Comprehensive industrial facility construction with advanced firefighting systems, HVAC infrastructure, and electrical distribution networks.",
       "heroImage": "assets/Images/projects/1.webp",
       "images": [
         "assets/Images/projects/2.webp",
@@ -60,10 +62,11 @@ export class ProjectDetailComponent implements OnInit {
         "assets/Images/projects/2.webp",
         "assets/Images/projects/2.webp",
       ]
-    }, "p4": {
+    },
+    "p4": {
       "id": "p4",
-      "title": "King Faisal Specialist Hospital and Research Center",
-      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).",
+      "title": "Smart City Infrastructure Project",
+      "description": "Modern urban development including smart grid systems, automated fire suppression networks, and integrated building management systems.",
       "heroImage": "assets/Images/projects/1.webp",
       "images": [
         "assets/Images/projects/2.webp",
@@ -71,10 +74,11 @@ export class ProjectDetailComponent implements OnInit {
         "assets/Images/projects/2.webp",
         "assets/Images/projects/2.webp",
       ]
-    }, "p5": {
+    },
+    "p5": {
       "id": "p5",
-      "title": "King Faisal Specialist Hospital and Research Center",
-      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).",
+      "title": "Maritime Port Expansion",
+      "description": "Large-scale port development with advanced cargo handling systems, fire safety infrastructure, and electrical power distribution networks.",
       "heroImage": "assets/Images/projects/1.webp",
       "images": [
         "assets/Images/projects/2.webp",
