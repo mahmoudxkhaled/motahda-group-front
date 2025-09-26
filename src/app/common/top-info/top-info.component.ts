@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class TopInfoComponent {
   // Company information
-  companyName: string = 'Quantum PMC LLC';
+  companyName: string = 'Motahda Group LLC';
   companyAddress: string = 'Al-Ansab, PO Box: B3897-900 - Muscat, Sultanate of Oman';
 
   // Company contact information
@@ -32,6 +32,6 @@ export class TopInfoComponent {
     whatsapp: 'WhatsApp',
     contact_us: 'Contact Us',
     follow_us: 'Follow Us',
-    company_name: 'Quantum PMC LLC'
+    company_name: 'Motahda Group LLC'
   };
 }

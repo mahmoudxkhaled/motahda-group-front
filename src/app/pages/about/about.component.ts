@@ -12,6 +12,6 @@ import { BannerComponent } from '../../common/banner/banner.component';
 })
 export class AboutComponent {
   constructor(private title: Title) {
-    this.title.setTitle('About | Quantum PMC');
+    this.title.setTitle('About | Motahda Group');
   }
 }

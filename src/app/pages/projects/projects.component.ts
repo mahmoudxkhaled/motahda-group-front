@@ -24,7 +24,7 @@ interface ProjectListItem {
 })
 export class ProjectsComponent {
   constructor(private title: Title) {
-    this.title.setTitle('Projects | Quantum PMC');
+    this.title.setTitle('Projects | Motahda Group');
   }
   projects: ProjectListItem[] = [
     {

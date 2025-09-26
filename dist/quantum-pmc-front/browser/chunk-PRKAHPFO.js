@@ -60,7 +60,7 @@ var G = class o {
     this.title = m;
     this.apiService = d;
     this.messageService = t;
-    this.title.setTitle("Contact | Quantum PMC");
+    this.title.setTitle("Contact | Motahda Group");
   }
   isSubmitting = !1;
   errorMessage = "";
@@ -226,7 +226,7 @@ var G = class o {
           l(6, "Contact Details"),
           i(),
           a(7, "p"),
-          l(8, "Quantum PMC LLC"),
+          l(8, "Motahda Group LLC"),
           i(),
           a(9, "p"),
           l(10, " Address: Al-Ansab, PO Box: B3897-900 \u2013 Muscat, "),

@@ -290,7 +290,7 @@ export class ProjectDetailComponent implements OnInit {
         this.loadProject(projectId);
         const project = this.projectsData[projectId as keyof typeof this.projectsData];
         if (project) {
-          this.title.setTitle(`${project.title} | Quantum PMC`);
+          this.title.setTitle(`${project.title} | Motahda Group`);
         }
       }
     });

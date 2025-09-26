@@ -13,14 +13,7 @@ export const routes: Routes = [
         path: 'services',
         loadComponent: () => import('./pages/services/services.component').then(m => m.ServicesComponent)
     },
-    {
-        path: 'services/project-management',
-        loadComponent: () => import('./pages/services/service-one/service-one.component').then(m => m.ServiceOneComponent)
-    },
-    {
-        path: 'services/claims-management',
-        loadComponent: () => import('./pages/services/service-two/service-two.component').then(m => m.ServiceTwoComponent)
-    },
+
     {
         path: 'projects',
         loadComponent: () => import('./pages/projects/projects.component').then(m => m.ProjectsComponent)

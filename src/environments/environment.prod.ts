@@ -1,7 +1,7 @@
 export const environment = {
     production: true,
     apiUrl: 'https://api.motahda-group.com/api',
-    appName: 'Quantum PMC',
+    appName: 'Motahda Group',
     version: '1.0.0',
     debug: false,
     logLevel: 'error',

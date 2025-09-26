@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
+
   @Input() title: string = '';
   @Input() description?: string = '';
   @Input() backgroundImage: string = 'assets/images/pattern/04.png';
@@ -20,4 +21,8 @@ export class BannerComponent {
 
   @Input() breadcrumbLabel2?: string = '';
   @Input() breadcrumbLink2?: string = '/';
+
+  ngOnInit(): void {
+    console.log(this.title);
+  }
 }

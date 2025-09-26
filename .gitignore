@@ -416,3 +416,24 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ----- Project-specific caches (Angular/Node/Tools) -----
+# Angular CLI cache
+.angular/
+.angular/cache/
+
+# Generic cache directories
+.cache/
+**/.cache/**
+**/cache/**
+
+# Common temp directories
+.tmp/
+.temp/
+**/.tmp/**
+**/.temp/**
+
+# Vite/Parcel/Turbo caches (if ever used)
+.vite/
+.parcel-cache/
+.turbo/
