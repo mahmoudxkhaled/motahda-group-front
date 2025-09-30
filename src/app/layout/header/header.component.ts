@@ -20,8 +20,8 @@ export class HeaderComponent {
     protected readonly navigationItems = signal<NavigationItem[]>([
         { label: 'Home', route: '/' },
         { label: 'About Us', route: '/about' },
-        { label: 'Services', route: '/services' },
         { label: 'Projects', route: '/projects' },
+        { label: 'Services', route: '/services' },
     ]);
 
     // Mobile menu state

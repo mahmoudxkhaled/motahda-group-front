@@ -40,7 +40,30 @@
     }
   }
 
+  .project-description {
+    margin-bottom: 1.5rem;
+  }
+
+  .company-scope {
+    margin-bottom: 1.5rem;
+  }
+
+  .description-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0 0 0.5rem 0;
+    text-transform: none;
+  }
+
   .project-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+
+  .scope-text {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;

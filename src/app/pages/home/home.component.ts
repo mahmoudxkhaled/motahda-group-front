@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { CarouselModule } from 'primeng/carousel';
+import { ProjectDataService } from '../../services/project-data.service';
 
 @Component({
   selector: 'app-home',
@@ -27,11 +28,14 @@ import { CarouselModule } from 'primeng/carousel';
   ]
 })
 export class HomeComponent {
+  private title = inject(Title);
+  private projectDataService = inject(ProjectDataService);
+
   protected readonly hero = {
     title: 'Your Trusted Partner In Fire Protection',
-    subtitle: 'HVAC, Electrical, And Plumbing Systems Since 2003.',
+    subtitle: 'HVAC, Electrical, And Plumbing Systems Since 2003',
     description:
-      'We provide design, supply, installation, and maintenance services aligned with NFPA, European, and Egyptian standards.'
+      'We provide design, supply, installation, and maintenance services aligned with NFPA, European, and Egyptian standards'
   } as const;
 
   services = [
@@ -43,42 +47,11 @@ export class HomeComponent {
     { icon: '📟', title: 'Addressable & Conventional Alarms' }
   ];
 
-  projects = [
-    {
-      id: 'p1',
-      image: 'assets/Images/projects/1.webp',
-      title: 'King Faisal Specialist Hospital and Research Center',
-      text: 'The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract\'s value was about 3.7 billion SARs (nearly 1 billion USDs).',
-    },
-    {
-      id: 'p2',
-      image: 'assets/Images/projects/1.webp',
-      title: 'General Authority for Economic Zones',
-      text: 'Raising the efficiency of the fire network, changing the fire pump group, and establishing an external network with a total of 13 million Egyptian pounds.',
-    },
-    {
-      id: 'p3',
-      image: 'assets/Images/projects/1.webp',
-      title: 'Industrial Infrastructure Development',
-      text: 'Comprehensive industrial facility construction with advanced firefighting systems, HVAC infrastructure, and electrical distribution networks.',
-    },
-    {
-      id: 'p4',
-      image: 'assets/Images/projects/1.webp',
-      title: 'Smart City Infrastructure Project',
-      text: 'Modern urban development including smart grid systems, automated fire suppression networks, and integrated building management systems.',
-    },
-    {
-      id: 'p5',
-      image: 'assets/Images/projects/1.webp',
-      title: 'Maritime Port Expansion',
-      text: 'Large-scale port development with advanced cargo handling systems, fire safety infrastructure, and electrical power distribution networks.',
-    }
-  ];
+  projects = this.projectDataService.getProjectsForHome();
 
   partners = Array.from({ length: 10 }).map((_, i) => `assets/Images/cropped-logo-180x180.png`);
 
-  constructor(private title: Title) {
+  constructor() {
     this.title.setTitle('Motahida Group - Home');
   }
 

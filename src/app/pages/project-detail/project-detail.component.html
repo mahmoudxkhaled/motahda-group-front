@@ -5,7 +5,14 @@
             <div class="hero-layout">
                 <div class="hero-text">
                     <h1 class="project-title">{{ project.title }}</h1>
-                    <p class="project-intro" [innerHTML]="project.description"></p>
+                    <div class="project-description">
+                        <h3 class="description-heading">Project:</h3>
+                        <p class="project-intro">{{ project.projectDescription }}</p>
+                    </div>
+                    <div class="company-scope">
+                        <h3 class="description-heading">Company Scope:</h3>
+                        <p class="scope-text">{{ project.companyScope }}</p>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <img class="image-container" [src]="project.heroImage" [alt]="project.title">

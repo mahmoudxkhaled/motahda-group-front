@@ -11,14 +11,17 @@
                             <a [routerLink]="['/projects', project.id]">{{ project.title }}</a>
                         </h2>
                         <p class="project-description">{{ project.description }}</p>
+                        <div class="project-actions">
+                            <a class="read-more" [routerLink]="['/projects', project.id]">Read more →</a>
+                        </div>
                     </div>
                     <div class="project-image">
                         <img [src]="project.heroImage" [alt]="project.title">
                     </div>
                 </div>
                 <div class="project-gallery">
-                    <div class="gallery-item" *ngFor="let i of [1,2,3,4]">
-                        <img src="assets/Images/projects/2.webp" [alt]="project.title + ' - Gallery Image ' + i">
+                    <div class="gallery-item" *ngFor="let img of getProjectImages(project.id) | slice:0:4">
+                        <img [src]="img" [alt]="project.title + ' - Gallery Image'">
                     </div>
                 </div>
             </div>
