@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ClientsComponent {
     @Input() gradient: boolean = false;
+    @Input() subtitle: string | null = null;
     logos: string[] = [
         'assets/images/clients/1.png',
         'assets/images/clients/2.jpg',
