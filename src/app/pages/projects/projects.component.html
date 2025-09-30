@@ -11,12 +11,14 @@
                             <a [routerLink]="['/projects', project.id]">{{ project.title }}</a>
                         </h2>
                         <p class="project-description">{{ project.description }}</p>
-                        <div class="project-actions">
-                            <a class="read-more" [routerLink]="['/projects', project.id]">Read more →</a>
+                        <div class="project-actions" style="margin-top: 1.5rem;">
+                            <a class="cta-button" [routerLink]="['/projects', project.id]">Read more →</a>
                         </div>
                     </div>
                     <div class="project-image">
-                        <img [src]="project.heroImage" [alt]="project.title">
+                        <a [routerLink]="['/projects', project.id]">
+                            <img [src]="project.heroImage" [alt]="project.title">
+                        </a>
                     </div>
                 </div>
                 <div class="project-gallery">

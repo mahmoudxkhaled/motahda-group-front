@@ -84,7 +84,6 @@ export class ProjectDataService {
                 "assets/images/projects/authority/authority-3.jpg",
                 "assets/images/projects/authority/authority-4.jpg",
                 "assets/images/projects/authority/authority-5.jpg",
-                "assets/images/projects/authority/authority-6.jpg"
             ]
         },
         "p5": {

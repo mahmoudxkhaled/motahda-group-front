@@ -1,0 +1,18 @@
+<section class="clients-section" [class.clients-section--gradient]="gradient">
+    <div class="container">
+        <h2 class="section-title">Partners & Clients</h2>
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <ng-container *ngFor="let src of logos">
+                        <div class="client-logo"><img [src]="src" alt="Client Logo" class="logo-img"></div>
+                    </ng-container>
+                    <!-- Duplicate for seamless loop -->
+                    <ng-container *ngFor="let src of logos">
+                        <div class="client-logo"><img [src]="src" alt="Client Logo" class="logo-img"></div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -18,6 +18,7 @@ export class ProjectDetailComponent implements OnInit {
 
   project: ProjectData | null = null;
   error: string | null = null;
+  related: ProjectData[] = [];
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -37,6 +38,11 @@ export class ProjectDetailComponent implements OnInit {
     if (project) {
       this.project = project;
       this.error = null;
+      // build related list: other projects except current, cap to 3
+      this.related = this.projectDataService
+        .getAllProjects()
+        .filter(p => p.id !== projectId)
+        .slice(0, 3);
     } else {
       this.error = `Project "${projectId}" not found.`;
       this.project = null;

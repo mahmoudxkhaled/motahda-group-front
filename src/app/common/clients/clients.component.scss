@@ -1,0 +1,15 @@
+.clients-section { background: white; padding: 4rem 0; overflow: hidden; position: relative; }
+.clients-section--gradient { background: linear-gradient(135deg, #2c3e50 0%, #db343c 100%); }
+.clients-section--gradient .section-title { color: #fff; }
+.clients-section .container { position: relative; z-index: 2; }
+.section-title { color: #c7221a; text-align: center; margin-bottom: 3rem; font-size: 1.5rem; font-weight: 700; }
+.marquee-container { margin-top: 3rem; overflow: hidden; position: relative; }
+.marquee { display: flex; animation: scroll 10s linear infinite; }
+.marquee-content { display: flex; align-items: center; gap: 4rem; white-space: nowrap; margin-bottom: 4rem; }
+.client-logo { flex-shrink: 0; display: flex; align-items: center; justify-content: center; height: 80px; min-width: 200px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; padding: 1rem; border: 2px solid rgba(255, 255, 255, 0.3); }
+.client-logo:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); }
+.logo-img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.marquee-container:hover .marquee { animation-play-state: paused; }
+
+

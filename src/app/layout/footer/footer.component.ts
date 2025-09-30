@@ -13,7 +13,7 @@ export class FooterComponent {
     // Company information
     companyName: string = 'Motahida';
     companyTagline: string = 'GROUP';
-    companyAddress: string = 'Mokattam, New Cairo, Egypt';
+    companyAddress: string = 'Mokattam, Cairo, Egypt';
     companyDescription: string = '';
 
     // Company contact information

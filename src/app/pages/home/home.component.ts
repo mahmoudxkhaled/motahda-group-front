@@ -4,12 +4,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { CarouselModule } from 'primeng/carousel';
+import { ClientsComponent } from '../../common/clients/clients.component';
 import { ProjectDataService } from '../../services/project-data.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, CarouselModule],
+  imports: [CommonModule, RouterModule, CarouselModule, ClientsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
@@ -49,7 +50,7 @@ export class HomeComponent {
 
   projects = this.projectDataService.getProjectsForHome();
 
-  partners = Array.from({ length: 10 }).map((_, i) => `assets/Images/cropped-logo-180x180.png`);
+  partners = Array.from({ length: 10 }).map((_, i) => `assets/images/cropped-logo-180x180.png`);
 
   constructor() {
     this.title.setTitle('Motahida Group - Home');

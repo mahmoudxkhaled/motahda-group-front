@@ -6655,7 +6655,7 @@ var Co = class e {
       [1, "logo-symbol", 2, "cursor", "pointer", 3, "routerLink"],
       [
         "src",
-        "assets/Images/cropped-logo-180x180.png",
+        "assets/images/cropped-logo-180x180.png",
         "alt",
         "Motahida Group Logo",
         1,
@@ -6883,7 +6883,7 @@ var wf = () => ["/"],
         [1, "footer-logo", 2, "cursor", "pointer", 3, "routerLink"],
         [
           "src",
-          "assets/Images/cropped-logo-180x180.png",
+          "assets/images/cropped-logo-180x180.png",
           "alt",
           "Motahida Group Logo",
           1,

@@ -1,7 +1,7 @@
 <main class="home">
     <!-- Hero Section -->
     <section class="hero" role="banner">
-        <figure class="hero__bg" aria-hidden="true" style="background-image: url('assets/Images/home/home1.png')">
+        <figure class="hero__bg" aria-hidden="true" style="background-image: url('assets/images/home/home1.png')">
         </figure>
         <div class="hero__content" [@fadeIn]>
             <h1 class="hero__title">{{ hero.title }}</h1>
@@ -38,7 +38,7 @@
                                 </path>
                             </svg>
                         </span>
-                        <span>Based in Cairo, serving Egypt, East Africa &amp; Oman &amp; Rwanda.</span>
+                        <span>Based in Cairo, serving Egypt, East Africa &amp; Oman.</span>
                     </li>
                     <li class="about__item">
                         <span class="about__bullet">
@@ -57,7 +57,7 @@
                                 </path>
                             </svg>
                         </span>
-                        <span>Experienced engineering &amp; technical &amp; construction teams.</span>
+                        <span>Experienced technical &amp; construction teams.</span>
                     </li>
                     <li class="about__item">
                         <span class="about__bullet">
@@ -78,15 +78,15 @@
                 </ul>
 
                 <div class="about__badges">
-                    <img src="assets/Images/home/ISO_9001-2015-1.svg" alt="ISO 9001:2015" />
-                    <img src="assets/Images/home/image-2.svg" alt="OHSAS 18001" />
+                    <img src="assets/images/home/ISO_9001-2015-1.svg" alt="ISO 9001:2015" />
+                    <img src="assets/images/home/image-2.svg" alt="OHSAS 18001" />
                 </div>
 
                 <a class="btn btn--ghost about__cta" routerLink="/about">Learn More</a>
             </article>
             <figure class="about__media">
                 <span class="about__frame"></span>
-                <img src="assets/Images/home/9ebf693ee8908d9f1cf5edfb57f7a2e82e055497-scaled.webp"
+                <img src="assets/images/home/9ebf693ee8908d9f1cf5edfb57f7a2e82e055497-scaled.webp"
                     alt="About Motahida" />
             </figure>
         </div>
@@ -96,11 +96,11 @@
     <section class="services" id="services">
         <div class="container">
             <div class="services__panel"
-                style="background-image: url('assets/Images/home/8505b1b2b2eac08b01f7ff6b2df31b949b518886-scaled.webp')">
+                style="background-image: url('assets/images/home/8505b1b2b2eac08b01f7ff6b2df31b949b518886-scaled.webp')">
                 <div class="services__header" [@fadeIn]>
                     <div class="services__eyebrow">Our Services</div>
                     <h3 class="services__headline">Motahida Group delivers turnkey MEP solutions across various sectors,
-                        with our specialty focusing on: we specialize in</h3>
+                        with our specialty focusing on:</h3>
                 </div>
                 <div class="services__grid">
                     <article class="service-card" [@fadeInDelayed]>
@@ -216,68 +216,7 @@
 
     <!-- Partners Section -->
 
-    <section class="clients-section">
-        <div class="container">
-            <h2 class="section-title">Partners & Clients
-            </h2>
-            <div class="marquee-container">
-                <div class="marquee">
-                    <div class="marquee-content">
-                        <div class="client-logo">
-
-                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
-                        </div>
-                        <!-- Duplicate for seamless loop -->
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-6.jpg" alt="TAV Construction" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-7.jpg" alt="Saudi Binladin Group" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-8.jpg" alt="Hill International" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-9.jpg" alt="Athena SA" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-10.jpg" alt="VATECH" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-11.jpg" alt="Siemens" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-12.jpg" alt="Client Logo" class="logo-img">
-                        </div>
-                        <div class="client-logo">
-                            <img src="assets/Images/qatalum/qatalum-13.jpg" alt="Client Logo" class="logo-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <app-clients [gradient]="true"></app-clients>
 
 
 
@@ -286,17 +225,21 @@
         <div class="container">
             <div class="projects__header" [@fadeIn]>
                 <div class="projects__eyebrow">Our Projects</div>
-                <h3 class="projects__headline">Motahida Group has had successfully executed various large-scale projects
-                    across Egypt and East Africa beyond</h3>
+                <h3 class="projects__headline">Motahida Group had successfully executed various large-scale projects
+                    across Egypt and East Africa</h3>
             </div>
             <p-carousel [value]="projects" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="0"
                 [responsiveOptions]="responsiveOptions" styleClass="projects-carousel" [@fadeInDelayed]>
                 <ng-template pTemplate="item" let-p>
                     <article class="project-card">
                         <figure class="project-card__figure">
-                            <img [src]="p.image" alt="Project" />
+                            <a [routerLink]="['/projects', p.id]">
+                                <img [src]="p.image" alt="Project" />
+                            </a>
                         </figure>
-                        <h4 class="project-card__title">{{ p.title }}</h4>
+                        <h4 class="project-card__title">
+                            <a [routerLink]="['/projects', p.id]">{{ p.title }}</a>
+                        </h4>
                         <p class="project-card__text">{{ p.text }}</p>
                         <a class="btn btn--ghost btn--sm" [routerLink]="['/projects', p.id]">View more <span
                                 class="btn__icon">→</span></a>

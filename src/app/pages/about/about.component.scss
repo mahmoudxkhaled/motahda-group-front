@@ -82,6 +82,47 @@
 
 
 
+/* Company Facts */
+.about-facts {
+  position: relative;
+  background: #0f1115;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.facts__container { position: relative; z-index: 2; }
+.facts__title { font-size: 2rem; font-weight: 900; margin: 0 0 1rem; }
+.facts__list { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+.facts__item { font-size: 1.05rem; line-height: 1.6; padding-left: 1.25rem; position: relative; }
+.facts__item::before {
+  content: '';
+  position: absolute; left: 0; top: .7rem; width: 8px; height: 8px; border-radius: 50%; background: #c62828;
+}
+.facts__bg { position: absolute; inset: 0; background: radial-gradient(1200px 600px at 10% 20%, rgba(255,255,255,.1), transparent); z-index: 1; }
+.facts__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent, rgba(0,0,0,.3)); z-index: 1; }
+.facts__gradient { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(198,40,40,.15), transparent); z-index: 1;}
+
+/* Company Workforce */
+.about-workforce { background: #f8f9fa; padding: 4rem 0; }
+.workforce__container { }
+.workforce__title { font-size: 2rem; font-weight: 900; margin: 0 0 1.5rem; }
+.workforce__grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+
+.person-card, .info-card--plain {
+  background: #fff; border-radius: 14px; padding: 1.25rem 1.5rem; box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.person-card__name { margin: 0; font-weight: 800; font-size: 1.15rem; }
+.person-card__role { margin: .25rem 0 .25rem; color: #c62828; font-weight: 700; }
+.person-card__bio { margin: 0; color: #444; line-height: 1.6; }
+
+.info-card--plain__heading { margin: 0 0 .25rem; font-weight: 800; color: #2c3e50; }
+.info-card--plain__text { margin: 0; color: #444; line-height: 1.6; }
+
+@media (max-width: 992px) {
+  .workforce__grid { grid-template-columns: 1fr; }
+}
 
 /* Clients Logo Marquee Section */
 .clients-section {

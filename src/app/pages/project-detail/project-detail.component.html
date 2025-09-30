@@ -21,6 +21,7 @@
         </div>
     </section>
 
+
     <!-- Images Gallery -->
     <section class="project-images" *ngIf="project.images && project.images.length > 0">
         <div class="container">
@@ -32,6 +33,31 @@
         </div>
     </section>
 </div>
+
+
+<!-- You may also like -->
+<section class="related-projects" *ngIf="related.length">
+    <div class="container">
+        <div class="related-header">
+            <h3 class="related-title">You may also like</h3>
+            <div class="title-line"></div>
+        </div>
+        <div class="related-grid">
+            <a class="related-card" *ngFor="let item of related" [routerLink]="['/projects', item.id]">
+                <div class="related-image-wrapper">
+                    <img [src]="item.heroImage" [alt]="item.title" loading="lazy" />
+                    <div class="related-overlay">
+                        <span class="overlay-text">View Project</span>
+                    </div>
+                </div>
+                <div class="related-info">
+                    <h4 class="related-name">{{ item.title }}</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <!-- Error State -->
 <div class="error-state" *ngIf="error">
