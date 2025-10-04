@@ -12,6 +12,14 @@
                     <ng-container *ngFor="let src of logos">
                         <div class="client-logo"><img [src]="src" alt="Client Logo" class="logo-img"></div>
                     </ng-container>
+                    <!-- Duplicate for seamless loop -->
+                    <ng-container *ngFor="let src of logos">
+                        <div class="client-logo"><img [src]="src" alt="Client Logo" class="logo-img"></div>
+                    </ng-container>
+                    <!-- Duplicate for seamless loop -->
+                    <ng-container *ngFor="let src of logos">
+                        <div class="client-logo"><img [src]="src" alt="Client Logo" class="logo-img"></div>
+                    </ng-container>
                 </div>
             </div>
         </div>

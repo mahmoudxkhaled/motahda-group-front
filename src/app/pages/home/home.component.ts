@@ -34,9 +34,9 @@ export class HomeComponent {
 
   protected readonly hero = {
     title: 'Your Trusted Partner In Fire Protection',
-    subtitle: 'HVAC, Electrical, And Plumbing Systems Since 2003',
+    subtitle: 'HVAC, Electrical, And Plumbing Systems',
     description:
-      'We provide design, supply, installation, and maintenance services aligned with NFPA, European, and Egyptian standards'
+      'We provide design, supply, installation, and maintenance services aligned with NFPA, European, and Regional standards'
   } as const;
 
   services = [
