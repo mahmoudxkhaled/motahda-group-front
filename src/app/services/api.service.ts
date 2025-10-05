@@ -42,7 +42,7 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     submitContactForm(data: ContactFormData): Observable<ApiResponse> {
-        return this.http.post<ApiResponse>(`${this.baseUrl}/contact`, data, this.httpOptions);
+        return this.http.post<ApiResponse>(`${this.baseUrl}/motahida-contact `, data, this.httpOptions);
     }
 
     submitCareerForm(data: CareerFormData): Observable<ApiResponse> {
